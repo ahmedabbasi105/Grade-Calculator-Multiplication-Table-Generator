@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<title>Grade Calculator & Multiplication Table Generator</title>
+
+</head>
+<body>
+
+<div id="container">
+  <h2>Grade Calculator & Multiplication Table Generator</h2>
+
+  <label for="percentageInput"><b>ENTER YOUR PERCENTAGE</b></label>
+  <input type="number" id="percentageInput" min="0" max="100" required>
+  <button onclick="calculateGrade()">Calculate Grade</button>
+
+  <div id="gradeResult" class="result"></div>
+  <hr>
+
+  <label for="tableInput"><b>ENTER A NUMBER FOR MULTIPLICATION TABLE</b></label>
+  <input type="number" id="tableInput" min="1" required>
+  <button onclick="generateTables()">Generate Tables</button>
+
+  <div id="tables" class="table-container"></div>
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
+
+
+
+
